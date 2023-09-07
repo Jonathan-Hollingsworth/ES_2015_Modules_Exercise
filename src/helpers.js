@@ -5,12 +5,12 @@ function choice(items=[]){
     return item
 };
 
-/** Randomly chooses an item from an array and returns it */
+/** Removes first matching item from an array and returns it. Returns */
 function remove(items=[], item=any){
     const idx = items.indexOf(item)
     if (idx !== -1) {
-        items.splice(idx, 1)
-        return item
+        const spliced = items.splice(idx, 1)
+        return spliced[0]
     } else {
         return undefined
     };
