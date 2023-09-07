@@ -5,7 +5,7 @@ function choice(items=[]){
     return item
 };
 
-/** Removes first matching item from an array and returns it. Returns */
+/** Removes first matching item from an array and returns it. Returns `undefined` if no match is found */
 function remove(items=[], item=any){
     const idx = items.indexOf(item)
     if (idx !== -1) {
